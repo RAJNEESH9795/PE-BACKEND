@@ -1,0 +1,14 @@
+1xx InformationalThese codes communicate protocol-level information before the main response is sent.
+100 Continue: The initial part of the request is received; the client should proceed with the rest.
+101 Switching Protocols: The server agrees to switch protocols (e.g., upgrading from HTTP to WebSockets)
+
+2xx SuccessThese codes confirm that the request was processed correctly.
+200 OK: The request succeeded, and the server returned the requested data.
+201 Created: The request succeeded and a new resource was successfully created.
+202 Accepted: The request has been accepted for processing, but is not yet complete (common in async tasks).
+204 No Content: The request succeeded, but the server is intentionally returning no data body
+
+3xx RedirectionThese codes mean the resource has moved, and the client must go to a different URL.
+301 Moved Permanently: The resource has a new permanent URL. Future requests should use the new link.
+302 Found: The resource is temporarily located at a different URL.
+304 Not Modified: The cached version on the client is still valid; no data transfer is needed.
